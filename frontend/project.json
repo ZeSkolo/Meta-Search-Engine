@@ -1,0 +1,48 @@
+{
+  "repo": "Meta-Search-Engine",
+  "title": "Meta-search workspace",
+  "subtitle": "A working start for your empty repository: search, clean links and inspect results.",
+  "tools": [
+    {
+      "id": "search",
+      "kind": "search",
+      "title": "Private search",
+      "description": "Search the educational catalog, or add live Wikipedia results.",
+      "actions": [
+        {
+          "id": "search",
+          "label": "Search",
+          "fields": [
+            {
+              "key": "query",
+              "label": "Search query",
+              "type": "text",
+              "value": "B+ tree"
+            },
+            {
+              "key": "mode",
+              "label": "Search engines",
+              "type": "select",
+              "value": "offline",
+              "options": [
+                {
+                  "value": "offline",
+                  "label": "Offline catalog"
+                },
+                {
+                  "value": "live",
+                  "label": "Catalog + live Wikipedia"
+                }
+              ]
+            }
+          ],
+          "note": "Offline results are a fixed educational corpus, not live web search. Live mode needs internet access."
+        }
+      ],
+      "base": "."
+    }
+  ],
+  "previews": [],
+  "runtime": "Aggregator copied from your private-metasearch-engine repo \u00b7 Offline catalog + optional live Wikipedia",
+  "port": 8114
+}
